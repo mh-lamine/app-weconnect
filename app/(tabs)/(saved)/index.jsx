@@ -42,7 +42,9 @@ function Salon({ salon }) {
           {salon.profilePicture ? (
             <Image
               source={{ uri: salon.profilePicture }}
-              className="w-16 h-16 rounded-full"
+              className={`w-16 h-16 rounded-full ${
+                salon.isFav && "border-primary/75 border-2"
+              }`}
             />
           ) : (
             <View className="w-16 h-16 rounded-full bg-gray-200" />
@@ -56,9 +58,9 @@ function Salon({ salon }) {
           {salon.isFav && (
             <Ionicons
               name="heart"
-              size={32}
+              size={20}
               color="#b361d4"
-              className="absolute top-2 left-2 z-30"
+              className="absolute top-4 left-3"
             />
           )}
         </View>
