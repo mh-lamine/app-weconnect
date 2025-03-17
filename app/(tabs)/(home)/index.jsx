@@ -72,7 +72,7 @@ function Salon({ salon }) {
         resizeMode="cover"
         className="h-60 bg-dark/50 rounded-xl overflow-hidden"
       >
-        <View className="w-full h-full bg-dark/25 absolute" />
+        <View className="w-full h-full bg-dark/20 absolute" />
         <View className="flex-row items-center gap-4 mt-auto p-4">
           {salon.profilePicture ? (
             <Image
